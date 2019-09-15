@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Somebi Nwogu</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
     <header>
@@ -31,11 +33,9 @@
                     <a href="#education" class="nav-link">Education</a>
                 </li>
                 <li>
-                    <a href="#services" class="nav-link">Services</a>
+                    <a href="#services" class="nav-link">What I know</a>
                 </li>
-                <li>
-                    <a href="#portfolio" class="nav-link">Portfolio</a>
-                </li>
+
                 <li>
                     <a href="#work-experience" class="nav-link">Work Experience</a>
                 </li>
@@ -52,12 +52,12 @@
 
     <section class="AboutMe" id="AboutMe">
         <div class="container">
-            <div class="profile-img">
+            <div class="profile-img" >
                 <!-- the source of the image I want to link to is specified and it is
                  resized dynamically using max-width -->  <!--style="max-width:100%;"-->
                 <img src="images/profile.JPG" alt="" >
             </div>
-            <div class="AboutMe-details">
+            <div class="AboutMe-details" >
                 <div class="AboutMe-heading">
                     <h1>About</h1>
                     <h6>Me</h6>
@@ -103,7 +103,7 @@
             </div>
             <div class="my-education">
                 <div class="education">
-                    <i class="fas fa chart-group">
+                    <i class="fas fa-chart-group">
                     </i>
                     <h1>Memorial University of Newfoundland</h1>
                     <p> B.Eng Computer Engineering Co-op <br>
@@ -113,7 +113,7 @@
                 </div>
 
                 <div class="education">
-                        <i class="fas fa chart-group">
+                        <i class="fas fa-chart-group">
                         </i>
                     <h1>Great Lakes College of Toronto</h1>
                     <p> High School - Science</p>
@@ -123,44 +123,57 @@
             </div>
     </section>
 
-    <section class="Services" id="services">
+    <section class="What I Know" id="services">
         <div class="container">
             <div class="section-heading">
-                <h1>Services</h1>
+                <h1>What I know</h1>
                 <h6>Help me Help you</h6>
             </div>
             <div class="my-skills">
                 <div class="skill">
                     <div class="icon-container">
-                        <i class="fas fa layer-group">
+                        <i class="fas fa-layer-group">
                         </i>
                     </div>
-                    <h1>Web Design</h1>
-                    <p>Explain how I can help on this</p>
+                    <h1>Software and Tools</h1>
+                        <p>• Linux and Windows OS</p>
+                        <p> • Agile Software tool - JIRA</p>
+                       <p> • GitHub</p>
+                      <p>• IntellIJ </p>
+                      <p>• Oscilloscope</p>
+                      <p>• Hardware design test gear</p>
+                    <p>• MS Office, MATLAB </p>
                 </div>
 
                 <div class="skill">
                     <div class="icon-container">
-                        <i class="fas fa code-group">
+                        <i class="fas fa-code">
+                        </i>
+                    </div>
+                    <h1>Languages</h1>
+                    <p>• HTML, CSS</p>
+                    <p>• Java, C++</p>
+                    <p> • VHDL</p>
+                    <p> • Python</p>
+                    <p>• JavaScript </p>
+                    <p>• Assembly Language</p>
+
+                </div>
+
+                <div class="skill">
+                    <div class="icon-container">
+                        <i class="fas fa-laptop-code">
                         </i>
                     </div>
                     <h1>Web Development</h1>
-                    <p>Explain how I can help on this</p>
+                    <p>For now, this is the first website I have worked on. I used HTML, CSS, and jQuery. I look forward to working on even more projects.</p>
                 </div>
 
-                <div class="skill">
-                    <div class="icon-container">
-                        <i class="fas fa chart-group">
-                        </i>
-                    </div>
-                    <h1>Product Strategy</h1>
-                    <p>Explain how I can help on this</p>
-                </div>
             </div>
         </div>
     </section>
 
-    <section class="Portfolio" id="portfolio">
+   <!--- <section class="Portfolio" id="portfolio">
         <div class="container">
             <div class="section-heading">
                 <h1>Portfolio</h1>
@@ -202,7 +215,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> ---->
 
     <section class="Work-experience" id="work-experience">
     <div class="container">
@@ -211,7 +224,7 @@
         </div>
         <div class="timeline">
             <ul>
-                <li class="date" data-date="April 2019 - August 2019">
+                <li class="date" data-date="Apr. 2019 - Aug. 2019">
                     <h1>Nokia, Ottawa, ON, Canada</h1>
                     <h6>IPD Hardware Design Engineer Co-op</h6>
                     <p>
@@ -222,7 +235,7 @@
                     </p>
                 </li>
 
-                <li class="date" data-date="February 2019 - May 2019">
+                <li class="date" data-date="Feb. 2019 - May 2019">
                     <h1>Memorial University Calling Program, St. Johns, NL,Canada</h1>
                     <h6>Student Caller</h6>
                     <p>
@@ -233,7 +246,7 @@
                     </p>
                 </li>
 
-                <li class="date" data-date="September 2018 - December 2018">
+                <li class="date" data-date="Sept. 2018 - Dec. 2018">
                     <h1>Nokia, Ottawa, ON, Canada</h1>
                     <h6>ION SR-TEC Applications Engineer Co-op</h6>
                     <p>
@@ -244,7 +257,7 @@
                     </p>
                 </li>
 
-                <li class="date" data-date="January 2018 - April 2018">
+                <li class="date" data-date="Jan. 2018 - Apr. 2018">
                     <h1>Memorial Engineering Outreach, St. Johns, NL, Canada</h1>
                     <h6>Engineering Mentor/Intern</h6>
                     <p>
@@ -270,15 +283,15 @@
             <input type="text" id="name" name="name" placeholder="Enter your name..." required>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" placeholder="Enter your email..." required>
-            <label for="service">Services:</label>
+            <label for="service">Which best applies to you:</label>
             <select name="services" id="service">
-               <option value="">Web Design</option>
-                <option value="">Web Development</option>
-                <option value="">Web Design/Development</option>
+               <option value="">Internship/Employment Opportunity</option>
+                <option value="">I have a project for you</option>
+                <option value="">General enquiries</option>
             </select>
             <label for="subject">Subject:</label>
             <textarea name="subject" id="subject" cols="10" rows="10"></textarea>
-            <input type="submit" value="Subject">
+            <input type="submit" value="Submit">
         </form>
     </div>
     </section>
@@ -286,8 +299,8 @@
     <footer class="copyright">
         <div class="up" id="up">
             <i class="fas fa-chevron-up"></i>
-            <p>&copy; 2019 Somebi Nwogu</p>
         </div>
+        <p>&copy; 2019 Somebi Nwogu</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
