@@ -15,7 +15,7 @@
 }
 
 html{
-     font-size: 10px;
+     font-size: 9.5px;
      font-family: "Roboto Light", sans-serif; /* sns-serif is the fall-back font style */
      color: black ;
 }
@@ -25,6 +25,10 @@ body{
     height: 100%;
     background:url("images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
+}
+
+section{
+    padding: 6rem 0;
 }
 
 a{
@@ -106,7 +110,7 @@ header{
     height:100vh;
     position:fixed;
     top:-100vh; /*hide the nav*/
-    z-index: 1;
+    z-index: 2;
     background-color: darkgray;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
@@ -274,7 +278,7 @@ li{
 
 /*Start education*/
 .my-education{
-    margin-top: 5rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr)) ;
     grid-gap: 2.5rem;
@@ -298,7 +302,7 @@ li{
 
 /*Start Services*/
 .my-skills{
-    margin-top: 10rem;
+    margin-top: 2rem;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr)) ;
     grid-gap: 2.5rem;
@@ -328,30 +332,274 @@ li{
     display: flex;
     transform: rotate(45deg);
 }
-
+ /*selecting my icon*/
 .icon-container i{
     color: purple;
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
-
 }
 /*End services*/
 
-/*Start portfolio*/
-/*End portfolio*/
-
 /*Start timeline*/
+.timeline{
+    margin-top: 6rem;
+}
+.timeline ul{
+    border-left: 4px solid purple;
+    border-radius: .8rem;
+    background-color: pink;
+    margin: 0 auto;
+    position: relative;
+    padding: 5rem;
+    list-style: none;
+    text-align: left;
+    width: 70%;
+
+}
+
+.timeline h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    opacity: .3;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
+}
+
+.timeline h6{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.timeline .date{
+    border-bottom: 1px solid pink ;
+    border-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.timeline .date:last-of-type{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .date::before,
+.timeline .date::after{
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform:translateY(-50%) ;
+}
+
+.timeline .date::before{
+    content: attr(data-date);
+    left: -23rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 1.5rem;
+}
+
+.timeline .date::after{
+    content: '';
+    box-shadow: 0 0 0 3px purple;
+    border-radius: 50%;
+    left: -8rem;
+    height: 1rem;
+    width: 1.5rem;
+    background-color: pink;
+}
+
 /*End timeline*/
 
 /*Start contact*/
+.contact{
+    margin-top: 6rem;
+
+}
+
+form{
+    width:70%;
+    margin: 0 auto;
+}
+
+form label{
+    font-size: 1.5rem;
+}
+
+input,
+select,
+textarea{
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 5px;
+    border: none;
+    outline-color: pink;
+}
+
+input[type="submit"]{
+    width: initial;
+    background-color: purple;
+    color: pink;
+    padding: 1rem 2rem;
+    border-radius: .8rem;
+    cursor: pointer;
+    transition: background-color650ms;
+}
+
+input[type="submit"]:hover{
+    color: plum;
+    background-color: pink;
+}
 /*End contact*/
 
 /*Start footer*/
+.copyright{
+    width:100%;
+    background-color: lightgray;
+    text-align: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.up{
+    position: absolute;
+    width: 5rem;
+    height: 5rem;
+    background-color: lightgray;
+    top: -2.5rem;
+    border-radius: 100%;
+    right: 5rem;
+    display: flex;
+    animation: pulse 2s infinite;
+    cursor: pointer;
+}
+
+.up i{
+    color: purple;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.copyright p{
+    font-size: 1.4rem;
+}
 /*End footer*/
 
 /*Start animations*/
+@keyframes pulse {
+    0%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+    }
+    70%{
+        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+    }
+    100%{
+        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+    }
+
+}
 /*End animations*/
 
 /*Start media queries*/
+@media screen and (max-width: 768px) {
+    body{
+        background:url("images/sitebg.jpg") no-repeat center fixed;
+        background-size: cover;
+    }
+
+    .intro-text h1{
+        font-size: 15rem;
+    }
+
+    .intro-text h6{
+        font-size: 1.7rem;
+    }
+
+
+
+    li{
+        margin: 2rem 0;
+    }
+
+    .nav-link{
+        font-size: 4.5rem;
+    }
+
+    .AboutMe-heading h1{
+        font-size: 8rem;
+    }
+    .section-heading h1{
+        font-size: 3rem;
+    }
+
+    .AboutMe-details .nav-list{
+        flex-direction: initial;
+    }
+
+    .AboutMe-details li{
+        margin: 0 2rem;
+    }
+
+    .icon-container i{
+        font-size: 4rem;
+    }
+
+    .timeline ul{
+        margin: 0 0 0 auto
+    }
+
+    .timeline .date::before{
+        left: -23rem;
+    }
+
+    .timeline .date::after{
+        left: -5.9rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .menu-toggler{
+        top:2rem;
+        right: 2rem;
+    }
+
+    .intro-text h1{
+        font-size: 8rem;
+    }
+
+    .intro-text h6{
+        font-size: 1.4rem;
+    }
+
+    .nav-link{
+        font-size: 3.5rem;
+    }
+
+    .AboutMe .container{
+        flex-direction: column;
+    }
+
+    .profile-img{
+        margin: 0 0 7rem 0;
+    }
+
+    .timeline p{
+        font-size: 1.6rem;
+    }
+
+    .timeline .date::before{
+        font-size: 1.4rem;
+    }
+
+    form{
+        width:100%;
+    }
+
+    .up{
+        right: 2rem;
+    }
+}
 /*End media queries*/
