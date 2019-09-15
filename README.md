@@ -1,1 +1,1 @@
-# Portfolio-website containing my recent work
+# Portfolio-website containing my recent work. I havent been able to get my animation working using AOS but I'm working on that. I'm also learning how to use PHP so an email can be sent directly to me from the website. Other than that, it is fully functional and responsive!!
